@@ -63,14 +63,14 @@ class Home extends Component {
         <h3>
           Add A Blog
         </h3>
-{/* 
-      { this.state.blogs.map( blog => (
+
+      {/* { this.state.blogs.map( blog => (
         <div>
           <div>{blog.title}</div>
           <div>{blog.date}</div>
           <p>{blog.body}</p>
         </div>
-      )) } */}
+      )) }  */}
      
 
        <BlogForm addBlog={this.addBlog}/>

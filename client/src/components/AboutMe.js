@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import nova from '../images/nova.jpg';
+import jabba from '../images/jabba.jpg'
+import til from '../images/til.jpg'
+import alvy from '../images/alvy.jpg'
 import '../css/custom.css'; 
-import { Grid, Image } from 'semantic-ui-react';
+import { Grid, Image, Card, Icon } from 'semantic-ui-react';
 
 
 
@@ -14,7 +17,6 @@ class AboutMe extends Component {
     <div class="img-overlay"></div>
 </div>
       <div>
-        {/* <p>About me</p> */}
         <h1>
           About Me 
         </h1>
@@ -31,12 +33,89 @@ class AboutMe extends Component {
     <Image src='https://upload.wikimedia.org/wikipedia/commons/a/a1/Quarter-finals_Limardo-Robeiri_Masters_epee_2012_n05.jpg' />
     </Grid.Column>
     <Grid.Column>
-      <Image src='https://images.fineartamerica.com/images-medium-large-5/diversity-paint-brushes-horizontal-don-mcgillis.jpg' />
+      <Image src='https://images.fineartamerica.com/images-small-large-5/diversity-paint-brushes-horizontal-don-mcgillis.jpg' />
     </Grid.Column>
     <Grid.Column>
       <Image src='https://spacequotations.com/wp-content/uploads/2018/09/darth-vader-810x473.jpg' />
     </Grid.Column>
   </Grid>
+      <br>
+      </br>
+      <br>
+      </br>
+      
+      <h1>
+        My babies!!
+      </h1>
+
+  <Grid container columns={3}>
+    <Grid.Column>
+
+  <Card className='card-item'>
+    <Image src={jabba} wrapped  fluid={false} size='large'/>
+    <Card.Content>
+      <Card.Header>Jabba the Fluff</Card.Header>
+      <Card.Meta>
+        <span className='date'>The little man</span>
+      </Card.Meta>
+      <Card.Description>
+        Jabba the Fluff
+      </Card.Description>
+    </Card.Content>
+    <Card.Content extra>
+      <a>
+        <Icon name='user' />
+        3 friends
+      </a>
+    </Card.Content>
+  </Card>
+    </Grid.Column>
+
+
+    <Grid.Column>
+  <Card className='card-item'>
+    <Image src={til} wrapped  fluid={false} size='large'/>
+    <Card.Content>
+      <Card.Header>Matilda</Card.Header>
+      <Card.Meta>
+        <span className='date'>Born 17 years ago</span>
+      </Card.Meta>
+      <Card.Description>
+        The best girl in the world
+      </Card.Description>
+    </Card.Content>
+    <Card.Content extra>
+      <a>
+        <Icon name='user' />
+        1 million friends
+      </a>
+    </Card.Content>
+  </Card>
+    </Grid.Column>
+
+
+    <Grid.Column>
+  <Card className='card-item'>
+    <Image src={alvy} wrapped fluid={false} size='large'/>
+    <Card.Content>
+      <Card.Header>Alvy</Card.Header>
+      <Card.Meta>
+        <span className='date'>The baby boy</span>
+      </Card.Meta>
+      <Card.Description>
+        AKA mr. squish body
+      </Card.Description>
+    </Card.Content>
+    <Card.Content extra>
+      <a>
+        <Icon name='user' />
+        3 friends
+      </a>
+    </Card.Content>
+  </Card>
+    </Grid.Column>
+  </Grid>
+
 
       <br>
       </br>

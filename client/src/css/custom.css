@@ -58,6 +58,12 @@ body {
 		
 	}
 
+	.card-item img{
+		/* min-height: 250px; */
+		max-height: 250px;
+	}
+
+
 	.footer-header {
 		
 	}
